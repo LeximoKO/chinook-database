@@ -50,7 +50,7 @@ services:
       MYSQL_ROOT_PASSWORD: chinook
       MYSQL_DATABASE: Chinook
     ports:
-      - "3306:3306"
+      - "20002:3306"
     volumes:
       - ./ChinookDatabase/DataSources/Chinook_MySql.sql:/docker-entrypoint-initdb.d/Chinook_MySql.sql
       - ./ChinookDatabase/DataSources/Chinook_MySql_AutoIncrementPKs.sql:/docker-entrypoint-initdb.d/Chinook_MySql_AutoIncrementPKs.sql
